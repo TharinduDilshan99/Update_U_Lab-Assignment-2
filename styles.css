@@ -203,10 +203,9 @@ body{
   
 @media (max-width: 768px) {
    body{
-
       overflow: scroll;
-
    }
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -222,14 +221,12 @@ body{
         white-space: nowrap; 
         overflow-x: scroll;
         max-width: 100%; 
-
     }
 
     .grid-container .filter .filter1 .header1 {
-
        width:900px;
-
     }
+    
     .grid-container .sidebar .card-container {
         overflow-y: scroll;
         max-height: 400px; 
