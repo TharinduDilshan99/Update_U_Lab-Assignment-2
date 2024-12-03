@@ -1,0 +1,237 @@
+*{
+ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+
+    background-color: #0D101B;
+    font-family: 'Inter' ,sans-serif;
+    overflow: hidden;
+} 
+
+.grid-container{
+  
+  display: grid;
+  grid-template-rows: auto 500px auto;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+  "filter filter"
+  "video-wrapper sidebar"
+  "thumbnail sidebar";
+  gap:15px 10px;
+  padding: 40px;
+ 
+}
+.grid-container .filter{
+
+    display: grid;
+    grid-area: filter;
+    /* grid-template-columns:auto auto; */
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "h4 button"
+    "h4 button"
+    "h4 button"
+    "h4 button";
+    background-color: #0D101B;
+}
+
+.grid-container .filter .filter1 .header1 h4{
+
+    grid-area: h4;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    width: 110px;
+   
+}
+.grid-container .filter .filter1 .header1{
+
+    display: flex;
+
+}
+.grid-container .filter .filter1 .header1 button{
+
+   grid-area: button;
+   max-height: 62px;
+   max-width: 100px;
+   padding: 5px 20px;
+   border-radius: 8px; 
+   background-color: #FC048C; 
+   color: white; 
+   font-size: 10px; 
+   border: none; 
+   cursor: pointer; 
+   margin: 2px 5px;
+   overflow: hidden; 
+   align-items: center;
+   justify-content: center;
+   text-overflow: ellipsis;
+   white-space: nowrap; 
+}
+
+.grid-container .filter .filter1 button:hover{
+
+   background-color: #750040;
+   
+}
+.grid-container .video-wrapper{
+ 
+    grid-area: video-wrapper;
+    background-color: rgb(68, 72, 114);
+
+}
+.grid-container .video-wrapper video{
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+   
+}
+.grid-container .video-wrapper h2 {
+
+    color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 1rem 2rem;
+    text-align: start;
+
+}
+.grid-container .sidebar {
+    grid-area: sidebar;
+    background-color: #1A1A2E; 
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.grid-container .sidebar h3 {
+       
+    color: white;
+    position: relative;
+    /* padding: 1rem 2rem; */
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.grid-container .sidebar button{
+
+    width: 100%;
+    height: 42px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    border-radius: 12px;
+    background: #FC048C;
+    border-color: #FC048C;
+    color: white;
+    font-size: 14px;
+}
+.grid-container .sidebar button:hover{
+
+    background-color: #750040;
+}
+.grid-container .sidebar .card-container{
+
+    margin-top: 20px;
+    max-height: 450px;
+    overflow-y: initial; 
+    overflow-x: hidden;
+    padding-right: 10px; 
+    
+
+}
+.grid-container .sidebar .card-container .card{
+
+    width: 100%;
+    height: 140px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+   
+}
+
+.grid-container .sidebar  .card-container .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    object-fit: cover;
+}
+
+.grid-container .thumbnail{
+
+    grid-area: thumbnail;
+    background-color: #0D101B;
+}
+.grid-container  .thumbnail{
+
+
+    grid-area: thumbnail;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+   
+}
+.grid-container  .thumbnail .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+  
+.grid-container .thumbnail .dot:hover {
+    background-color: #FC048C;
+}
+  
+@media (max-width: 768px) {
+   body{
+
+      overflow: scroll;
+
+   }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "filter"
+            "video-wrapper"
+            "thumbnail"
+            "sidebar";
+        gap: 20px;
+    }
+
+    .grid-container .filter .filter1 {
+        white-space: nowrap; 
+        overflow-x: scroll;
+        max-width: 100%; 
+
+    }
+
+    .grid-container .filter .filter1 .header1 {
+
+       width:900px;
+
+    }
+    .grid-container .sidebar .card-container {
+        overflow-y: scroll;
+        max-height: 400px; 
+    }
+}
