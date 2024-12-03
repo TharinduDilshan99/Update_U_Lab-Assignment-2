@@ -48,13 +48,12 @@ body{
     width: 110px;
    
 }
+
 .grid-container .filter .filter1 .header1{
-
     display: flex;
-
 }
-.grid-container .filter .filter1 .header1 button{
 
+.grid-container .filter .filter1 .header1 button{
    grid-area: button;
    max-height: 62px;
    max-width: 100px;
@@ -74,31 +73,27 @@ body{
 }
 
 .grid-container .filter .filter1 button:hover{
-
    background-color: #750040;
-   
 }
+
 .grid-container .video-wrapper{
- 
     grid-area: video-wrapper;
     background-color: rgb(68, 72, 114);
-
 }
-.grid-container .video-wrapper video{
 
+.grid-container .video-wrapper video{
     height: 100%;
     width: 100%;
-    object-fit: contain;
-   
+    object-fit: contain; 
 }
-.grid-container .video-wrapper h2 {
 
+.grid-container .video-wrapper h2 {
     color: rgb(255, 255, 255);
     position: absolute;
     padding: 1rem 2rem;
     text-align: start;
-
 }
+
 .grid-container .sidebar {
     grid-area: sidebar;
     background-color: #1A1A2E; 
@@ -106,8 +101,8 @@ body{
     border-radius: 10px;
     padding: 0 10px;
 }
-.grid-container .sidebar h3 {
-       
+
+.grid-container .sidebar h3 {    
     color: white;
     position: relative;
     /* padding: 1rem 2rem; */
@@ -117,7 +112,6 @@ body{
 }
 
 .grid-container .sidebar button{
-
     width: 100%;
     height: 42px;
     margin-top: 10px;
@@ -129,22 +123,20 @@ body{
     color: white;
     font-size: 14px;
 }
-.grid-container .sidebar button:hover{
 
+.grid-container .sidebar button:hover{
     background-color: #750040;
 }
-.grid-container .sidebar .card-container{
 
+.grid-container .sidebar .card-container{
     margin-top: 20px;
     max-height: 450px;
     overflow-y: initial; 
     overflow-x: hidden;
     padding-right: 10px; 
-    
-
 }
-.grid-container .sidebar .card-container .card{
 
+.grid-container .sidebar .card-container .card{
     width: 100%;
     height: 140px;
     background-color: blue;
@@ -152,8 +144,6 @@ body{
     margin-right: auto;
     margin-bottom: 10px;
     border-radius: 10px;
-    
-   
 }
 
 .grid-container .sidebar  .card-container .card img{
@@ -164,13 +154,11 @@ body{
 }
 
 .grid-container .thumbnail{
-
     grid-area: thumbnail;
     background-color: #0D101B;
 }
+
 .grid-container  .thumbnail{
-
-
     grid-area: thumbnail;
     border-radius: 10px;
     padding: 0px;
@@ -180,8 +168,8 @@ body{
     align-items: center;
     margin-bottom: 0px;
     margin-bottom: 20px;
-   
 }
+
 .grid-container  .thumbnail .dot {
     cursor: pointer;
     height: 15px;
@@ -194,7 +182,6 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
   
 .grid-container .thumbnail .dot:hover {
@@ -226,7 +213,7 @@ body{
     .grid-container .filter .filter1 .header1 {
        width:900px;
     }
-    
+
     .grid-container .sidebar .card-container {
         overflow-y: scroll;
         max-height: 400px; 
