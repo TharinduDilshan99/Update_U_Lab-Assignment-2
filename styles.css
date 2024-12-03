@@ -1,19 +1,16 @@
 *{
- 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
-body{
 
+body{
     background-color: #0D101B;
     font-family: 'Inter' ,sans-serif;
     overflow: hidden;
 } 
 
 .grid-container{
-  
   display: grid;
   grid-template-rows: auto 500px auto;
   grid-template-columns: 3fr 1fr;
@@ -23,10 +20,9 @@ body{
   "thumbnail sidebar";
   gap:15px 10px;
   padding: 40px;
- 
 }
-.grid-container .filter{
 
+.grid-container .filter{
     display: grid;
     grid-area: filter;
     /* grid-template-columns:auto auto; */
@@ -40,13 +36,11 @@ body{
 }
 
 .grid-container .filter .filter1 .header1 h4{
-
     grid-area: h4;
     color: white;
     font-weight: 100;
     font-size: 14px;
-    width: 110px;
-   
+    width: 110px; 
 }
 
 .grid-container .filter .filter1 .header1{
